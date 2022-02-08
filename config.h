@@ -30,9 +30,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define USE_SERIAL_PD2
 
+#define RETRO_TAPPING
 #define TAPPING_FORCE_HOLD
-#define TAPPING_TERM 150
+#define TAPPING_TERM 250
 #define NO_ACTION_ONESHOT
+#define PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
 
 #ifdef RGBLIGHT_ENABLE
     #undef RGBLED_NUM
@@ -43,7 +46,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define RGBLED_NUM 27
     #define RGBLIGHT_LIMIT_VAL 120
     #define RGBLIGHT_DEFAULT_VAL 30
-    #define RGBLIGHT_DEFAULT_HUE 180
+    #define RGBLIGHT_DEFAULT_HUE 140
     #define RGBLIGHT_HUE_STEP 10
     #define RGBLIGHT_SAT_STEP 17
     #define RGBLIGHT_VAL_STEP 17
